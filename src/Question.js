@@ -7,28 +7,25 @@ const Question = ({title,info}) => {
 
   return (
     <>
-      <main className="w-4/5 lg:w-3/5 p-5 mx-auto">
-        <section className="shadow row">
+      <main className=" w-4/5 lg:w-3/5  mx-auto">
+        <section className="shadow row bg-slate-900">
           <div className="border-b tab">
             <div className="border-l-2 border-transparent relative">
-              <header
-                className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
-                
-              >
-                <span className="text-cyan-900 font-bold  text-sm">
+              <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label">
+                <span className="text-[#fca311] font-bold  text-sm">
                   {title}
                 </span>
-                <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
+                <div className="  w-7 h-7 flex items-center justify-center test">
                   <button
                     onClick={() => setShowInfo(!showInfo)}
-                    className="h-24 w-24"
+                    className="text-white  rounded-full p-1 border border-grey hover:text-[#fca311] hover:border-[#fca311]"
                   >
                     {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
                   </button>
                 </div>
               </header>
               <div className="tab-content">
-                <div className="pl-8 pr-8 pb-5 text-grey-darkest">
+                <div className="text-white pl-8 pr-8 pb-5 text-grey-darkest">
                   {showInfo && <p>{info}</p>}
                 </div>
               </div>
