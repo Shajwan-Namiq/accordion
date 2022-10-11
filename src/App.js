@@ -1,6 +1,6 @@
  
 import './App.css';
-import react, { useState } from 'react';
+import  { useState } from 'react';
 import data from './data';
 import SingleQuestion from './Question';
 
